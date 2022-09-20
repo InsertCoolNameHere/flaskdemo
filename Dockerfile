@@ -7,11 +7,11 @@ WORKDIR /
 RUN ls -R workspace/
 RUN pwd
 
-RUN pip install --no-cache-dir flask
-
 COPY interceptor.py .
 COPY static/ static/
 COPY templates/ /templates/
+
+RUN pip install --no-cache-dir flask
 
 EXPOSE 5000
 
