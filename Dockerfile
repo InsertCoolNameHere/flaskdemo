@@ -4,10 +4,10 @@ MAINTAINER Saptashwa Mitra,sapmitra@colostate.edu
 
 WORKDIR /
 
-RUN pip install --no-cache-dir flask
-
 RUN ls -R workspace/
 RUN pwd
+
+RUN pip install --no-cache-dir flask
 
 COPY interceptor.py .
 COPY static/ static/
