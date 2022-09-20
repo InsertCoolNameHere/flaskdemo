@@ -9,9 +9,9 @@ RUN pip install --no-cache-dir flask
 RUN ls -la .
 RUN pwd
 
+COPY interceptor.py .
 COPY static/ static/
 COPY templates/ /templates/
-COPY interceptor.py .
 
 EXPOSE 5000
 
