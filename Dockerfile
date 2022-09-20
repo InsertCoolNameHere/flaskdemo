@@ -2,6 +2,8 @@ FROM python
 
 MAINTAINER Saptashwa Mitra,sapmitra@colostate.edu
 
+WORKDIR .
+
 RUN pip install --no-cache-dir flask
 
 RUN ls -la .
