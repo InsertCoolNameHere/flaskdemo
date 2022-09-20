@@ -6,7 +6,7 @@ WORKDIR /
 
 RUN pip install --no-cache-dir flask
 
-RUN ls -la .
+RUN ls -R workspace/
 RUN pwd
 
 COPY interceptor.py .
